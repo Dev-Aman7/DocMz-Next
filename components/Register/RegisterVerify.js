@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Form, Icon, Input, Select, Radio, DatePicker, Upload, Button, Spin } from 'antd';
+import { Form, Icon, Input, Select, Radio, DatePicker, Upload, Button, Spin, message } from 'antd';
 import { registerDoctor } from '../../services/api/doctors.js';
 const {
     Item : FormItem
@@ -265,6 +265,54 @@ class RegisterVerify extends Component {
                                     </FormItem>
                                 </div>
                             </div>    
+                            <div className="">
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <FormItem>
+                                            {
+                                                getFieldDecorator("country", {
+                                                    rules: [{ required: true, message: 'Please select country!' }],
+                                                    onChange: (a)=> {
+                                                        setFieldsValue({
+                                                            state: cityJson[a][0]
+                                                        })
+                                                    }
+                                                })(
+                                                    <Select
+                                                        placeholder="Select Your Country"
+                                                    >
+                                                        {
+                                                            stateList.map( state => <Option key={state} value={state}>{state}</Option> )
+                                                        }
+                                                    </Select>,
+                                                )
+                                            }
+                                        </FormItem>
+                                    </div>
+                                    <div className="col-sm-6">
+                                    <Upload
+                                        name= 'image'
+                                        // action= ''
+                                        // headers= {{ authorization: 'authorization-text'}}
+                                        onChange={(info)=> {
+                                            if (info.file.status !== 'uploading') {
+                                                console.log(info);
+                                            }
+                                            if (info.file.status === 'done') {
+                                                message.success(`${info.file.name} file uploaded successfully`);
+                                            } else if (info.file.status === 'error') {
+                                                message.error(`${info.file.name} file upload failed.`);
+                                            }
+                                        }}
+                                    >
+                                        <Button>
+                                            <UploadOutlined /> Click to Upload
+                                        </Button>
+                                    </Upload>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div className="">
                                 <div className="row">
                                     <div className="col-sm-6">
