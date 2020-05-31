@@ -4,41 +4,41 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 import AliceCarousel from 'react-alice-carousel';
 
-import './phase4.css';
+import './specialityslider.css';
 
 class phase4 extends Component{
     items = [
         {
             text:"Primary Care",
-            src:"/primarycare.png"
+            src:"/images/specialityslider/primarycare.png"
         },
         {
             text:"Obgyn",
-            src:"/obygn.jpg"
+            src:"/images/specialityslider/obygn.jpg"
         },
         {
             text:"Dentists",
-            src:"/dentist.png"
+            src:"/images/specialityslider/dentist.png"
         },
         {
             text:"Dermatology",
-            src:"/dematologist.png"
+            src:"/images/specialityslider/dematologist.png"
         },
         {
             text:"Psychiatrist",
-            src:"/psychiatrist.png"
+            src:"/images/specialityslider/psychiatrist.png"
         },
         {
             text:"Eye Doctor",
-            src:"/eyedoctor.png"
+            src:"/images/specialityslider/eyedoctor.png"
         },
         {
             text:"ENT",
-            src:"/ent.png"
+            src:"/images/specialityslider/ent.png"
         },
         {
             text:"Gastroentrologist",
-            src:"/gastro.png"
+            src:"/images/specialityslider/gastro.png"
         },
     ]
     

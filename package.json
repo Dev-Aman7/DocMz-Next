@@ -8,6 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@material-ui/core": "^4.9.11",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "@ant-design/icons": "^4.0.2",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
@@ -17,10 +25,12 @@
     "bootstrap": "^4.4.1",
     "breakpoint-sass": "^2.7.1",
     "classnames": "^2.2.6",
+    "chart.js": "^2.9.3",
     "flickity": "^2.2.1",
     "html-react-parser": "^0.10.1",
     "isomorphic-unfetch": "^3.0.0",
     "moment-range": "^4.0.2",
+    "moment": "^2.24.0",
     "next": "9.2.1",
     "next-images": "^1.3.0",
     "next-redux-wrapper": "^4.0.1",
@@ -36,11 +46,14 @@
     "react-highlight-words": "^0.16.0",
     "react-icons-kit": "^1.3.1",
     "react-input-mask": "^2.0.4",
+    "react-live-clock": "^4.0.5",
     "react-moment": "^0.9.7",
     "react-places-autocomplete": "^7.2.1",
+    "react-payment-card-component": "^0.2.1",
     "react-popper": "^1.3.7",
     "react-redux": "^7.1.3",
     "react-reveal": "^1.2.2",
+    "react-responsive": "^8.0.3",
     "react-sticky": "^6.0.3",
     "react-svg": "^11.0.9",
     "react-transition-group": "^4.3.0",
@@ -51,5 +64,9 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.0.1",
     "susy": "^3.0.5"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "react-alice-carousel": "^1.19.0"
   }
 }

@@ -2,6 +2,7 @@ import withBasicLayout from '../components/layouts/basic-layout/withBasicLayout'
 import BannerType1 from '../components/banners/banner-type-1/BannerType1'
 import { BANNER_BTN_TEXT, BANNER_TEXT_1, BANNER_TEXT_2, BANNER_TEXT_3, BANNER_IMAGE, SEARCH_BOX_HEADING, SPECIALITIES_CARDS, SPECIALITIES_TEXT_1, SPECIALITIES_TEXT_2, SPECIALITIES_BTN_TEXT, HOW_IT_WORK_PRETITLE, HOW_IT_WORK_TITLE_P_1, HOW_IT_WORK_TITLE_P_2, HOW_IT_WORK_CONTENT, HOW_IT_WORK_STEPS } from '../constants/messages/home'
 import SearchBox from '../components/search/search-box/SearchBox'
+import Specialityslider from '../components/speciality-slider/specialityslider'
 import FlicktySlider from '../components/sliders/flickty-slider/FlicktySlider'
 import SimpleSlideCard from '../components/sliders/slides/simple-slide-card/SimpleSlideCard'
 import { ReactSVG } from 'react-svg'
@@ -43,7 +44,8 @@ const Home = () => (
       <p>{HOW_IT_WORK_CONTENT}</p>
     </HowItworks>
     <div className="container-fluid pt-5">
-      <div className="row">
+      <Specialityslider></Specialityslider>
+      {/* <div className="row">
         <div className="col-md-3 bg-secondary d-flex flex-column justify-content-center align-items-center">
           <h2 className="text-dark display-4 font-weight-bold">{SPECIALITIES_TEXT_1}</h2>
           <h2 className="text-danger display-4 font-weight-bold">{SPECIALITIES_TEXT_2}</h2>
@@ -65,8 +67,8 @@ const Home = () => (
               />)
             }        
           </FlicktySlider>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
     <div className="p-5"></div>
   </div>
