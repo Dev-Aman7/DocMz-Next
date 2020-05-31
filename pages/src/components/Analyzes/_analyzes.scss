@@ -1,0 +1,56 @@
+.analyzes-container {
+  display: flex;
+  justify-content: space-between;
+  .analyzes-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .analyzes-info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      background: $color-primary1;
+      color: $color-primary2;
+      border-radius: 1em;
+      padding: 1em;
+      .analyzes-info-primary {
+        &-title {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        &-secondary {
+          font-size: 1rem;
+          font-weight: 400;
+          color: $color-tertiary3;
+        }
+      }
+      .analyzes-info-icon {
+        width: 8rem;
+        height: 8rem;
+        color: $color-primary2;
+        fill: $color-primary2;
+      }
+    }
+
+    .analyzes-info-value {
+      color: $color-primary1;
+      padding: 2em 1em;
+      border-radius: 1em;
+      background: $color-primary2;
+      &-primary {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+  }
+  .analyzes-options {
+    background: $color-primary2;
+    padding: 1em;
+    color: $color-tertiary1;
+    border-radius: 1em;
+    &-menu {
+      font-size: 1.2rem;
+      color: $color-tertiary2;
+      padding: 0.5em;
+    }
+  }
+}

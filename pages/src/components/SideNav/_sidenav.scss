@@ -1,0 +1,92 @@
+.sidenav-main {
+  padding: 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  .sidenav-brand {
+    &-icon {
+      fill: $color-primary2;
+      padding-left: 0.7em;
+      padding-right: 0.7em;
+      padding-top: 0.7em;
+      padding-bottom: 0.2em;
+      transition: all 0.3s ease-out;
+    }
+    &-info {
+      font-size: 1.6rem;
+      color: $color-primary2;
+      font-weight: 800;
+      text-align: center;
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  //menu wraper
+  .sidenav-menu-wrapper {
+    margin-top: 5rem;
+
+    .sidenav-ul {
+      position: absolute;
+      list-style-type: none;
+
+      // margin: 0;
+      top: 50%;
+      display: flex;
+
+      justify-content: start;
+      flex-direction: column;
+
+      transform: translateY(-50%);
+      .sidenav-li {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        border-radius: 0.5em;
+        margin-top: 1em;
+        transition: all 0.3s ease-out;
+        .sidenav-icon-wrapper {
+          color: $color-primary2;
+          fill: $color-primary2;
+
+          cursor: pointer;
+        }
+        &:hover {
+          background-color: $color-secondary2;
+          transform: scale(1.2);
+        }
+        &:active {
+          transform: scale(0.92);
+        }
+      }
+    }
+
+    .sidenav-exit {
+      position: absolute;
+      fill: $color-tertiary2;
+      bottom: 0;
+      padding-bottom: 3em;
+      transition: all 0.3s ease-out;
+      .sidenav-icon-wrapper {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sidenav-ul {
+    display: flex;
+    flex-direction: row;
+  }
+}

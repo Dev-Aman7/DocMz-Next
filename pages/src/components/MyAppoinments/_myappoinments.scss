@@ -1,0 +1,52 @@
+.myappoinments-container {
+  table {
+    border-collapse: separate;
+    border-spacing: 0 15px !important;
+    tbody tr:hover {
+      box-shadow: 5px 5px 18px 2px rgba(0, 0, 0, 0.47);
+      transform: scale(1.1);
+      td {
+        background: $color-primary1;
+        color: $color-primary2;
+        transform: scale(1.1);
+      }
+      .myappoinments-finished {
+        color: $color-primary2 !important;
+      }
+      .myappoinments-pending {
+        color: $color-primary2 !important;
+      }
+    }
+    tr td {
+      background: white;
+      padding: 1em 0.7em;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    tr td:first-child {
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+    }
+    tr td:last-child {
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+    }
+  }
+  .profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 1em;
+    margin-right: 1em;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 3em;
+    }
+  }
+  .myappoinments-finished {
+    color: $color-primary1;
+  }
+  .myappoinments-pending {
+    color: $color-secondary1;
+  }
+}

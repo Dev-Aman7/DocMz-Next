@@ -1,0 +1,41 @@
+.analytics-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: $color-primary1;
+  align-items: stretch;
+  border-radius: 1em;
+  width: 47%;
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-primary {
+      font-size: 1.2rem;
+      color: $color-primary2;
+    }
+    &-secondary {
+      font-size: 5rem;
+      color: $color-primary2;
+    }
+  }
+  &-icon {
+    width: 20rem;
+    height: 15rem;
+    fill: $color-primary2;
+    color: $color-primary2;
+    margin-bottom: 1rem;
+  }
+}
+
+.analytics-card-chart {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: $color-primary2;
+  width: 47%;
+  .chart-info {
+    .card-category {
+      font-size: 1.5rem;
+    }
+  }
+}

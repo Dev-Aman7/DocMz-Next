@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;700;800&display=swap');
+
+.phase4{
+     display: block;
+     height: 40vh;
+     width: 100%;
+}
+
+.heading41{
+    padding-top: 5vh;
+    text-align: center;
+    color: #929292;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    font-family: 'Helvetica Now',sans-serif;
+}
+
+.gallery4{
+    margin-top: 5vh;
+}
+
+.gallery4item{
+    height: 20vh;
+    width: 80%;
+    text-align: center;
+}
+
+.gallery4itemtext{
+    font-size: 29px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: 'EB Garamond', serif;
+}
+
+.gallery4button{
+    position: absolute;
+    top: 70%;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.gallery4button :hover{
+    outline: none;
+}
+
+.gallery4icon{
+    height: 60%;
+    width: 50%;
+    margin-bottom: 10%;
+}

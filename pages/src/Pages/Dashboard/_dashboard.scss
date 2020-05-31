@@ -1,0 +1,41 @@
+.dashboard-metrics-container {
+  background-color: $color-tertiary3;
+  border-radius: 2em;
+  .dashboard-datetime-wrapper {
+    padding: 0.7em 1em;
+    background: $color-primary2;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $color-tertiary1;
+    border-radius: 1.2em;
+    .clock-icon {
+      align-items: center;
+      margin-right: 5px;
+
+      color: $color-primary1;
+      fill: $color-primary1;
+    }
+  }
+  //main wrapper
+  .dashboard-metrics-wrapper {
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+
+.dashboard-secondary-title {
+  font-size: 1.3rem;
+  color: $color-tertiary1;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard-metrics-container {
+    border-radius: 0rem;
+    margin-bottom: 3rem;
+    .dashboard-datetime-wrapper {
+      display: none;
+    }
+  }
+}

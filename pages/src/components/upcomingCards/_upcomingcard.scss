@@ -1,0 +1,87 @@
+.upcard-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5em;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: $color-primary1;
+  border-radius: 1em;
+  box-shadow: 5px 5px 18px 2px rgba(0, 0, 0, 0.47);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  .upcard-icon {
+    color: $color-primary2;
+    fill: $color-primary2;
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+  }
+  .upcard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &-primary {
+      font-size: 1.5rem;
+      color: $color-primary2;
+    }
+    &-secondary {
+      font-size: 1rem;
+      color: $color-primary2;
+    }
+  }
+  .upcard-info-tertiary {
+    font-size: 1rem;
+    color: $color-tertiary2;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+}
+
+//grey color
+
+.upcard-container-grey {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5em;
+  justify-content: start;
+  align-items: flex-start;
+  background-color: $color-tertiary3;
+  border-radius: 1em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  .upcard-icon {
+    color: $color-primary1;
+    fill: $color-primary1;
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+  }
+  .upcard-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &-primary {
+      font-size: 1.5rem;
+      color: $color-tertiary1;
+    }
+    &-secondary {
+      font-size: 1rem;
+      color: $color-tertiary1;
+    }
+  }
+  .upcard-info-tertiary {
+    font-size: 1rem;
+    color: $color-tertiary1;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+}

@@ -1,0 +1,45 @@
+.payments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .payments-card {
+    .card {
+      min-width: 20rem !important;
+      height: 17rem !important;
+    }
+  }
+  .payments-buttons {
+    display: flex;
+
+    justify-content: space-around;
+    &-add {
+      padding: 1em 1.5em;
+      border: 3px dashed $color-primary1;
+      color: $color-primary1;
+      border-radius: 1em;
+      cursor: pointer;
+      font-size: 1.5rem;
+      &:hover {
+        background: $color-primary1;
+        color: $color-primary2;
+      }
+    }
+    &-remove {
+      padding: 1em 1em;
+      border: 3px dashed $color-secondary1;
+      border-radius: 1em;
+      cursor: pointer;
+      color: $color-secondary1;
+      font-size: 1.5rem;
+      &:hover {
+        background: $color-secondary1;
+        color: $color-primary2;
+      }
+    }
+  }
+  ._2D_VfCL6PDramYdGNPlSSA {
+    min-width: 100% !important;
+    background: linear-gradient(35deg, #fb6340 0, #fbb140 100%) !important;
+  }
+}

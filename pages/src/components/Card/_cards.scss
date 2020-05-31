@@ -1,0 +1,42 @@
+.cards-container {
+  padding: 2em;
+  background-color: white;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.24);
+  border-radius: 1em;
+  transition: all 0.3s ease-out;
+  .cards-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cards-icon {
+      color: $color-secondary2;
+      fill: $color-secondary2;
+    }
+    .cards-info {
+      margin-top: 0.5em;
+      font-size: 2rem;
+      color: $color-tertiary1;
+      font-weight: 600;
+    }
+    .cards-quote {
+      font-size: 1.3rem;
+      color: $color-tertiary2;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.92);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cards-container {
+    padding: 0.75em;
+  }
+}
