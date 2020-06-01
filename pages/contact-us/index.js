@@ -28,7 +28,7 @@ class contactus extends Component{
     ]
 
     problems() {
-        return this.problem.map((i) => <a><Problemcard/></a>)
+        return this.problem.map((i) => <a><Problemcard title={i.title} date={i.date}/></a>)
     }
 
     render(){

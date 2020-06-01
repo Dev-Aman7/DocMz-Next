@@ -6,8 +6,8 @@ class problemcard extends Component{
     render(){
         return(
             <div className="problemcard">
-               <p>asda adssad asdasfd</p>
-               <p>asdas asda</p>
+               <p>{this.props.title}</p>
+               <p>{this.props.date}</p>
             </div>
         )
     }

@@ -17,8 +17,3 @@
     font-size: 20px;
     padding-top: 3vh;
 }
-
-a :hover{
-    text-decoration: none;
-    border-bottom: 1px solid green;
-}
