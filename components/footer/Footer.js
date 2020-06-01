@@ -8,6 +8,8 @@ import { mail } from 'react-icons-kit/ikons/mail'
 import List from '../list/List'
 import cityJson from '../../constants/US_States_and_Cities.json';
 import carriers from "../../services/extra/Carriers.json";
+import Footertop from '../footertop/footertop';
+import Footerbottom from '../footerbottom/footer';
 import { TOP_TITLE_1, TOP_TITLE_2, TOP_TITLE_3, TOP_HEADING, BOTTOM_CONTENT, SITE_LINKS, BOTTOM_TITLE_2, BOTTOM_TITLE_3, BOTTOM_CONTENT_3, ADDRESS, EMAIL, NUMBER, APP_STORE_LINK, PLAY_STORE_LINK, MID_EMAIL_VALUE, MID_EMAIL_LABEL, MID_NUMBER_LABEL, MID_NUMBER_VALUE, COPY_RIGHT_TEXT, } from '../../constants/messages/footer.js';
 
 const Footer = (props) => {
@@ -16,7 +18,8 @@ const Footer = (props) => {
     const carriersList      = carriers.carriers.slice(0, 10).map(({name})    => ({name}))
     return (
         <div className="c-footer">
-            <FooterTop 
+            <Footertop></Footertop>
+            {/* <FooterTop 
                 list1={statesList}
                 list2={specialitiesList}
                 list3={carriersList}
@@ -98,36 +101,37 @@ const Footer = (props) => {
                 <p className="c-footer__copy">
                     {COPY_RIGHT_TEXT}
                 </p>
-            </div>
+            </div> */}
+            <Footerbottom></Footerbottom>
         </div>
     )
 }
-const FooterTop  = ({list1, list2, list3}) => {
-    return (
-        <div className="c-footer__top-section bg-secondary py-5">
-            <div className="container">
-                <h4 className="pb-5 text-dark font-weight-bold">{TOP_HEADING}</h4>
-                <div className="row">
-                    <div className="col-md-4">
-                        <h3>{TOP_TITLE_1}</h3>
-                        <hr />
-                        <List items={list1} />
-                    </div>
-                    <div className="col-md-4">
-                        <h3>{TOP_TITLE_2}</h3>
-                        <hr />
-                        <List items={list2} />
-                    </div>
-                    <div className="col-md-4">
-                        <h3>{TOP_TITLE_3}</h3>
-                        <hr />
-                        <List items={list3} />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+// const FooterTop  = ({list1, list2, list3}) => {
+//     return (
+//         <div className="c-footer__top-section bg-secondary py-5">
+//             <div className="container">
+//                 <h4 className="pb-5 text-dark font-weight-bold">{TOP_HEADING}</h4>
+//                 <div className="row">
+//                     <div className="col-md-4">
+//                         <h3>{TOP_TITLE_1}</h3>
+//                         <hr />
+//                         <List items={list1} />
+//                     </div>
+//                     <div className="col-md-4">
+//                         <h3>{TOP_TITLE_2}</h3>
+//                         <hr />
+//                         <List items={list2} />
+//                     </div>
+//                     <div className="col-md-4">
+//                         <h3>{TOP_TITLE_3}</h3>
+//                         <hr />
+//                         <List items={list3} />
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 
 const mapStateToProps = state => ({
     specialities: state.specialities

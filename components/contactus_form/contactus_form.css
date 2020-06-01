@@ -1,0 +1,14 @@
+.forminput{
+    width: 80%;
+    border: 1px solid grey;
+    margin: 2vh 0;
+}
+
+.submit_button{
+    position: relative;
+    left: 45%;
+    padding: 5px 20px ;
+    display: block;
+    color: white;
+    background-color: rgb(167, 58, 189);
+}

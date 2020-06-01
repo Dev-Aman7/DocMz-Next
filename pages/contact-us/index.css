@@ -1,0 +1,42 @@
+.contactus_landing{
+    display: block;
+    height: 100vh;
+}
+
+.contact_form{
+    height: 80vh;
+    width: 100%;
+    border-top: 1px solid rgb(56, 7, 75);
+}
+
+.cont_form_content{
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.form_header{
+    padding: 5vh 30vh;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: block;
+}
+
+.problem_section{
+    text-align: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.problem_header{
+    padding: 5vh 30vh;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25;
+    display: block;
+}
+
+a :hover{
+    color: blueviolet;
+}
